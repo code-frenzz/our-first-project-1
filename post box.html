@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styling.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("img/post.jpeg");
+  
+  /* Add the blur effect */
+  filter: blur(5px);
+  -webkit-filter: blur(1px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: rgb(235, 246, 255);
+  font-weight: bold;
+  border: 3px solid rgb(164, 211, 250);
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px rgb(0, 26, 48);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 66%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1 style="font-size:50px">YourSpace </h1>
+  <h2>Post Box</h2>
+  <p>Aren't there times when you want to talk to someone new? this is the place for it! make your very own pen pals and discover new friendships blossom</p>
+</div>
+
+<section>
+  <div class="sidebar">
+  <div class="logo_content">
+      <div class="logo">
+          <!-- <i class='bx bx-pyramid'></i> -->
+           <i class='bx bxs-pyramid bx-flip-horizontal bx-tada' style='color:rgba(199,17,232,0.97)'></i>
+          <div class="logo_name">YourSpace</div>
+      </div>
+      <i class='bx bx-menu' id="btn"></i>
+  </div>
+  <ul class="nav_list">
+      <li>
+          <i class='bx bx-search'></i>
+          <input type="text" placeholder="search....">
+          <span class="tooltip">Search</span>
+      </li>
+      <li>
+          <a href="menubar.html">
+              <i class='bx bx-home'></i>
+              <span class="links_name">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+      </li>
+      <li>
+          <a href="Study Materials.html">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Study Material</span>
+          </a>
+          <span class="tooltip">Study Material</span>
+      </li>
+      <li>
+          <a href="chatroom.html">
+              <i class='bx bx-message-dots'></i>
+              <span class="links_name">Chat box</span>
+          </a>
+          <span class="tooltip">Chat box</span>
+      </li>
+      <li>
+          <a href="suggestions.html">
+              <i class='bx bx-envelope'></i>
+              <span class="links_name">Suggestions</span>
+          </a>
+          <span class="tooltip">Suggestions</span>
+      </li>
+      <li>
+          <a href="post box.html">
+              <i class='bx bx-book-alt'></i>
+              <span class="links_name">Post Box</span>
+          </a>
+          <span class="tooltip">Post Box</span>
+      </li>
+      <li>
+          <a href="#">
+              <i class='bx bx-ghost'></i>
+              <span class="links_name">Profile</span>
+          </a>
+          <span class="tooltip">Profile</span>
+      </li>
+      <div class="profile_content">
+      <div class="Profile">
+          <div class="profile_details">
+              <!-- <img src="img.png" alt="profile"> -->
+              <div class="name_job">
+                  <!-- <div class="name">Neha Mandal</div>
+                  <div class="job">web designer</div> -->
+              </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+      </div>
+      </div>
+  </div>
+</section>
+<script>
+  let btn = document.querySelector("#btn");
+  let sidebar = document.querySelector(".sidebar");
+  let searchBtn = document.querySelector(".bx-search");
+
+  btn.onclick = function () {
+      sidebar.classList.toggle("active");
+  }
+  searchBtn.onclick = function () {
+      sidebar.classList.toggle("active");
+  }
+
+
+</script>
+
+</body>
+</html>
