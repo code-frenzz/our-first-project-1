@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YourSpace</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styling.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section>
+        <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-pyramid'></i>
+                <div class="logo_name">YourSpace</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="search....">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="menubar.html">
+                    <i class='bx bx-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="Study Materials.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Study Material</span>
+                </a>
+                <span class="tooltip">Study Material</span>
+            </li>
+            <li>
+                <a href="chatroom.html">
+                    <i class='bx bx-message-dots'></i>
+                    <span class="links_name">Chat box</span>
+                </a>
+                <span class="tooltip">Chat box</span>
+            </li>
+            <li>
+                <a href="suggestions.html">
+                    <i class='bx bx-envelope'></i>
+                    <span class="links_name">Suggestions</span>
+                </a>
+                <span class="tooltip">Suggestions</span>
+            </li>
+            <li>
+                <a href="post box.html">
+                    <i class='bx bx-book-alt'></i>
+                    <span class="links_name">Post Box</span>
+                </a>
+                <span class="tooltip">Post Box</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-ghost'></i>
+                    <span class="links_name">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <div class="profile_content">
+            <div class="Profile">
+                <div class="profile_details">
+                    <!-- <img src="img.png" alt="profile"> -->
+                    <div class="name_job">
+                        <!-- <div class="name">Neha Mandal</div>
+                        <div class="job">web designer</div> -->
+                    </div>
+                </div>
+                <i class="bx bx-log-out" id="log_out"></i>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="background_details">
+        <div class="background">
+            <p class="text-big">Welcome to YourSpace</p>
+            <p class="text-small">A place where you can share, manage, make friends and grow together. "MAKE YOUR OWN SPACE."</p>
+    </section>
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function () {
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+        }
+
+
+    </script>
+</body>
+
+</html>
